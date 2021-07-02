@@ -1,0 +1,245 @@
+#bx_compare_count
+{
+	display:none;	
+}
+.statusBlock
+{
+	width: 100%;
+	margin-bottom: 1.25rem;
+	border: .0625rem solid #e9e9e9;
+	padding: 1.5625rem;
+	margin-bottom: 10px;
+}
+
+.statusLine
+{
+	font-size: .9375rem;
+	font-weight: 700;
+	line-height: 1.75rem;
+	color: #000;
+	margin-bottom:10px;
+}
+.statusLine span
+{
+	padding: .3125rem;
+	font-size: .625rem;
+	letter-spacing: .03125rem;
+	text-transform: uppercase;
+	background: #f14950;
+    color: #fff;
+	border-radius: .1875rem;
+
+}
+.statusBar
+{
+	!float:right;
+	width:49%;
+	margin-bottom:25px;
+}
+
+.statusBarWrapper
+{
+	width:100%;
+	!max-width:300px;
+	border: 1px solid #2a78a4;
+	height:36px;
+	padding:2px;
+	position:relative;
+}
+
+
+.statusBarInner
+{
+	width:0;
+	height:30px;
+	background:#2a78a4;
+}
+
+.statusLeftInfo
+{
+	!float:left;
+	width:49%;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.statusText
+{
+	margin-bottom:5px;
+}
+
+.statusLeft
+{
+	position:absolute;
+	color:#2a78a4;
+	bottom:-20px;
+	left:0;
+	font-weight:700;
+}
+.statusRight
+{
+	position:absolute;
+	color:#2a78a4;
+	bottom:-20px;
+	right:0;
+	font-weight:700;
+}
+.header-phone-number span, .footer-info-phone-number span {
+	font-size:13px;
+	margin-left:10px;
+	color:#2a78a4;
+}
+.header-phone-number a, .footer-info-phone-number a {
+	font-size:1.0875rem;
+}
+.footer-main .footer-info {
+    width: 15.0625rem;
+}
+.footer-main .footer-main-menu {
+	margin: 0 0 -1.875rem 3.3125rem;
+    width: calc(100% - 310px);
+}
+.inline-block-item {
+    vertical-align: top;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+}
+.header-phone {
+    width: 16.5rem;
+}
+.header-v3 .header-main-menu-button {
+	background:#f14950;
+	color:#fff;
+}
+.catalog-filters .main-menu .main-menu-base>.main-menu-category>a, .catalog-filters .main-menu .main-menu-other>.main-menu-category>a, .header-v1 .main-menu .main-menu-base>.main-menu-category>a, .header-v1 .main-menu .main-menu-other>.main-menu-category>a, .header-v3 .main-menu .main-menu-base>.main-menu-category>a, .header-v3 .main-menu .main-menu-other>.main-menu-category>a {
+	padding:1.1125rem 1.25rem 1.1125rem .9375rem;
+	font-size: .875rem;
+	color:#000;
+}
+.catalog-filters .main-menu .main-menu-base>.main-menu-category>a:hover, .catalog-filters .main-menu .main-menu-other>.main-menu-category>a:hover, .header-v1 .main-menu .main-menu-base>.main-menu-category>a:hover, .header-v1 .main-menu .main-menu-other>.main-menu-category>a:hover, .header-v3 .main-menu .main-menu-base>.main-menu-category>a:hover, .header-v3 .main-menu .main-menu-other>.main-menu-category>a:hover {
+	background:#fafafa;
+}
+.header-v3 .main-menu-dropdown-wrap, .header-v3 .header-main-menu-button {
+	width: 15.6875rem;
+}
+.main-menu .main-menu-dropdown li {
+	padding:0;
+	margin:0;
+}
+.main-menu .main-menu-dropdown li a {
+	font-size: .875rem;
+	padding:0.52rem 1.25rem 0.52rem .9375rem;
+	color:#000;
+}
+.main-menu .main-menu-dropdown li a:hover {
+	
+}
+.main-menu .main-menu-base .main-menu-dropdown {
+	padding:0;
+}
+img.logo {
+	margin-top:-15px;
+}
+.header-line-bottom {
+	background:#2a78a4;
+}
+.header-additional-menu li a {
+	color:#fff;
+}
+.header-additional-menu li.active a, .header-additional-menu li:hover a {
+	color:#9ee1ff;
+}
+.header-v1 .header-line-bottom .add2compare .icon, .header-v1 .header-line-bottom .add2liked .icon, .header-v1 .header-line-bottom .header-line-top-profile .icon, .header-v1 .header-line-center .add2compare .icon, .header-v1 .header-line-center .add2liked .icon, .header-v1 .header-line-center .header-line-top-profile .icon, .header-v3 .header-line-bottom .add2compare .icon, .header-v3 .header-line-bottom .add2liked .icon, .header-v3 .header-line-bottom .header-line-top-profile .icon, .header-v3 .header-line-center .add2compare .icon, .header-v3 .header-line-center .add2liked .icon, .header-v3 .header-line-center .header-line-top-profile .icon {
+	fill:#fff;
+}
+.header-v3 .header-line-bottom .add2compare, .header-v3 .header-line-bottom .add2liked, .header-v3 .header-line-bottom .header-line-top-profile {
+	color:#fff;
+}
+.main-menu.pro .main-menu-base .opens-right>.main-menu-dropdown {
+	padding:10px 7px 7px;
+}
+@media screen and (min-width: 62.375em) {
+.fancybox-block .cart-content .header-v3 input.main-slider-banner[type=submit] .main-slider, .header-v3 .fancybox-block .cart-content input.main-slider-banner[type=submit] .main-slider, .header-v3 .main-slider-banner.small .main-slider, .header-v3 .profile-order-container .main-slider-banner.sale-order-list-cancel-payment .main-slider, .header-v3 .profile-order-container .profile-order .sale-order-detail-payment-options-methods-template input.main-slider-banner[type=submit] .main-slider, .header-v3 .profile-order-container .sale-paysystem-wrapper form input.main-slider-banner[type=submit] .main-slider, .profile-order-container .header-v3 .main-slider-banner.sale-order-list-cancel-payment .main-slider, .profile-order-container .profile-order .sale-order-detail-payment-options-methods-template .header-v3 input.main-slider-banner[type=submit] .main-slider, .profile-order-container .sale-paysystem-wrapper form .header-v3 input.main-slider-banner[type=submit] .main-slider {
+	margin-left: 17.625rem;
+}
+}
+@media screen and (min-width: 77.375em) {
+.header-v3 .header-phone {
+    margin-left: 3.375rem;
+}
+}
+@media screen and (max-width:768px){
+	
+	.statusLeftInfo, .statusBar
+	{
+		float:none;
+		width:100%;
+		margin-bottom:5px;
+	}
+}	
+
+.product-info-block .product-count
+{
+	padding-top:15px;
+}
+/*.header-phone-number a {font-size: 111%;    line-height: 31px;}*/
+    
+.bx-soa .bx-soa-section-content  input[name=ORDER_PROP_5].form-control
+{
+	border: .15rem solid #2577a5;
+}    
+	
+.bx_soa_location .bx-soa-reference	
+{
+	!color: #f5787e;
+	font-weight: bold;
+}
+.discountMain
+{
+	font-size: .9375rem;
+	color:#000;
+	text-align:center;
+}
+    
+#bx-soa-basket-remove-items
+{
+	!display:none;
+	border: 1px solid #f5787e;
+}
+.hidRemove
+{
+	display:none!important;
+}
+
+.delLine
+{
+	color:#000;	
+}
+#bx-soa-basket-remove-items-btndel
+{
+	margin-right:10px;
+}
+.hidDelBtns
+{
+	display:none!important;
+}
+.product-grid .name a span, .product-list .name a span {
+	height:4.5rem;
+	max-height:4.5rem;
+	margin:0 0 10px;
+}
+.products-flex-item {
+	height:20.45rem;
+}
+.mobile-menu .mobile-menu-social a .icon.icon-social-vk.icon-vk {
+	padding-left: .4375rem;
+    padding-right: .4375rem;
+}
+@media screen and (max-width: 32.3125em) {
+.products-flex-item, .products-flex-grid.small-down-2 .products-flex-item {
+	height:19.45rem;
+}
+}

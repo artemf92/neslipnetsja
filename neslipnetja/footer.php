@@ -64,31 +64,12 @@ $isSearch = ($APPLICATION->GetCurDir() == $templateOptions['url_catalog_search']
         <footer>
             <div class="footer-line-top">
                 <div class="advanced-container-medium footer-line-top-container row large-up-2 xlarge-up-3">
-                    <div class="show-for-large column">
-                        <?$APPLICATION->IncludeFile(
-                            SITE_DIR . "include/social_links.php",
-                            Array()
-                        );?>
-                    </div>
                     <div class="column" id="bx_subscribe_small">
                         <?$frame = new \Bitrix\Main\Page\FrameHelper("bx_subscribe_small", false);
                         $frame->begin();?>
                             <?require($_SERVER["DOCUMENT_ROOT"] . SITE_DIR . "include/popup/subscribe_small.php");?>
                         <?$frame->beginStub();?>
                         <?$frame->end();?>
-                    </div>
-                    <div class="show-for-xlarge column">
-                        <div class="float-right">
-                            <?$APPLICATION->IncludeComponent(
-                                "bitrix:main.include",
-                                "",
-                                Array(
-                                    "AREA_FILE_SHOW" => "file",
-                                    "AREA_FILE_SUFFIX" => "inc",
-                                    "PATH" => SITE_DIR . "include/pay.php"
-                                )
-                            );?>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -120,6 +101,19 @@ $isSearch = ($APPLICATION->GetCurDir() == $templateOptions['url_catalog_search']
                         if ($orderEmail):?>
                             <a class="footer-info-mail" href="mailto:<?=$orderEmail?>"><?=$orderEmail?></a>
                         <?endif;?>
+                        <div class="show-for-large column">
+                            <?$APPLICATION->IncludeFile(
+                                SITE_DIR . "include/social_links.php",
+                                Array()
+                            );?>
+                        </div>
+                        <div class="footer-line-top-caption">Способы оплаты</div>
+                        <ul class="pay-system-list small inline-block-container">
+                            <li class="inline-block-item"><img src="/local/templates/bitlate_pro/images/pay-4.png" alt=""></li>
+                            <li class="inline-block-item"><img src="/local/templates/bitlate_pro/images/pay-2.png" alt=""></li>
+                            <? /*?><li class="inline-block-item"><img src="/local/templates/bitlate_pro/images/pay-3.png" alt=""></li>
+                            <li class="inline-block-item"><img src="/local/templates/bitlate_pro/images/pay-1.png" alt=""></li><?*/?>
+                        </ul>
                     </div>
                     <!--noindex-->
                     <nav class="footer-main-menu inline-block-item show-for-xlarge">

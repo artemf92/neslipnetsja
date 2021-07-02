@@ -6,9 +6,9 @@ if (!empty($arResult['ERROR']))
 
 if (!empty($arResult['rows'])):
     $title = Option::get("bitlate.proshop", "NL_SOCIAL_TITLE", false, SITE_ID);
-    if ($title):?>
+    /*if ($title):?>
         <div class="footer-line-top-caption"><?=$title?></div>
-    <?endif;?>
+    <?endif;*/?>
     <ul class="footer-line-top-social inline-block-container">
         <?foreach ($arResult['rows'] as $arItem):?>
             <li class="inline-block-item icon-social-<?=$arItem['UF_TYPE']?>">

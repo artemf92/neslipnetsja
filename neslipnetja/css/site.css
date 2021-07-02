@@ -88,9 +88,9 @@
 	font-weight:700;
 }
 .header-phone-number span, .footer-info-phone-number span {
-	font-size:13px;
+	font-size:14px;
 	margin-left:10px;
-	color:#2a78a4;
+	color:#262626;
 }
 .header-phone-number a, .footer-info-phone-number a {
 	font-size:1.0875rem;
@@ -111,7 +111,7 @@
     width: 16.5rem;
 }
 .header-v3 .header-main-menu-button {
-	background:#f14950;
+	background:#FEC4C3;
 	color:#fff;
 }
 .catalog-filters .main-menu .main-menu-base>.main-menu-category>a, .catalog-filters .main-menu .main-menu-other>.main-menu-category>a, .header-v1 .main-menu .main-menu-base>.main-menu-category>a, .header-v1 .main-menu .main-menu-other>.main-menu-category>a, .header-v3 .main-menu .main-menu-base>.main-menu-category>a, .header-v3 .main-menu .main-menu-other>.main-menu-category>a {
@@ -144,10 +144,14 @@ img.logo {
 	margin-top:-15px;
 }
 .header-line-bottom {
-	background:#2a78a4;
+	/*background:#2a78a4;*/
+}
+.header-line-bottom .advanced-container {
+	background-color: #fff;
+	border-radius: 10px;
 }
 .header-additional-menu li a {
-	color:#fff;
+	color:#262626;
 }
 .header-additional-menu li.active a, .header-additional-menu li:hover a {
 	color:#9ee1ff;
@@ -156,10 +160,16 @@ img.logo {
 	fill:#fff;
 }
 .header-v3 .header-line-bottom .add2compare, .header-v3 .header-line-bottom .add2liked, .header-v3 .header-line-bottom .header-line-top-profile {
-	color:#fff;
+	color:#262626;
 }
 .main-menu.pro .main-menu-base .opens-right>.main-menu-dropdown {
 	padding:10px 7px 7px;
+}
+.footer-info-phone-number {
+	margin-bottom: 15px;
+}
+.footer-info-phone-link a {
+	text-decoration: underline;
 }
 @media screen and (min-width: 62.375em) {
 .fancybox-block .cart-content .header-v3 input.main-slider-banner[type=submit] .main-slider, .header-v3 .fancybox-block .cart-content input.main-slider-banner[type=submit] .main-slider, .header-v3 .main-slider-banner.small .main-slider, .header-v3 .profile-order-container .main-slider-banner.sale-order-list-cancel-payment .main-slider, .header-v3 .profile-order-container .profile-order .sale-order-detail-payment-options-methods-template input.main-slider-banner[type=submit] .main-slider, .header-v3 .profile-order-container .sale-paysystem-wrapper form input.main-slider-banner[type=submit] .main-slider, .profile-order-container .header-v3 .main-slider-banner.sale-order-list-cancel-payment .main-slider, .profile-order-container .profile-order .sale-order-detail-payment-options-methods-template .header-v3 input.main-slider-banner[type=submit] .main-slider, .profile-order-container .sale-paysystem-wrapper form .header-v3 input.main-slider-banner[type=submit] .main-slider {

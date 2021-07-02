@@ -1,8 +1,5 @@
 <?if ($templateOptions['header_version'] != 'v2'):?>
     <div class="inline-block-container">
-    <svg class="icon">
-        <use xlink:href="#svg-icon-phone"></use>
-    </svg>
     <div class="inline-block-item">
 <?endif;
 use Bitrix\Main\Config\Option;

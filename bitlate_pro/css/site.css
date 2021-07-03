@@ -1,0 +1,165 @@
+#bx_compare_count
+{
+	display:none;	
+}
+.statusBlock
+{
+	width: 100%;
+	margin-bottom: 1.25rem;
+	border: .0625rem solid #e9e9e9;
+	padding: 1.5625rem;
+	margin-bottom: 10px;
+}
+
+.statusLine
+{
+	font-size: .9375rem;
+	font-weight: 700;
+	line-height: 1.75rem;
+	color: #000;
+	margin-bottom:10px;
+}
+.statusLine span
+{
+	padding: .3125rem;
+	font-size: .625rem;
+	letter-spacing: .03125rem;
+	text-transform: uppercase;
+	background: #f14950;
+    color: #fff;
+	border-radius: .1875rem;
+
+}
+.statusBar
+{
+	!float:right;
+	width:49%;
+	margin-bottom:25px;
+}
+
+.statusBarWrapper
+{
+	width:100%;
+	!max-width:300px;
+	border: 1px solid #2a78a4;
+	height:36px;
+	padding:2px;
+	position:relative;
+}
+
+
+.statusBarInner
+{
+	width:0;
+	height:30px;
+	background:#2a78a4;
+}
+
+.statusLeftInfo
+{
+	!float:left;
+	width:49%;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.statusText
+{
+	margin-bottom:5px;
+}
+
+.statusLeft
+{
+	position:absolute;
+	color:#2a78a4;
+	bottom:-20px;
+	left:0;
+	font-weight:700;
+}
+.statusRight
+{
+	position:absolute;
+	color:#2a78a4;
+	bottom:-20px;
+	right:0;
+	font-weight:700;
+}
+a.products-flex-item {
+	width: 193px;
+	border:0!important;
+}
+.catalog-category-grid .img-wrap img {
+	max-width:100px;
+	height:auto;
+}
+@media screen and (max-width:1024px){
+	a.products-flex-item {
+		width: 145px;
+	}
+}
+@media screen and (max-width:768px){
+	
+	.statusLeftInfo, .statusBar
+	{
+		float:none;
+		width:100%;
+		margin-bottom:5px;
+	}
+	
+}	
+
+.product-info-block .product-count
+{
+	padding-top:15px;
+}
+/*.header-phone-number a {font-size: 111%;    line-height: 31px;}*/
+    
+.bx-soa .bx-soa-section-content  input[name=ORDER_PROP_5].form-control
+{
+	border: .15rem solid #2577a5;
+}    
+	
+.bx_soa_location .bx-soa-reference	
+{
+	!color: #f5787e;
+	font-weight: bold;
+}
+.discountMain
+{
+	font-size: .9375rem;
+	color:#000;
+	text-align:center;
+}
+    
+#bx-soa-basket .bx-soa-editstep
+{
+	display:none;
+}
+
+#bx-soa-total
+{
+	display:none;
+}
+    
+.bx-soa-location-input-container .bx-ui-sls-tree-trunk
+{
+	display:none;
+}
+
+#bx-soa-total-mobile.hide-mob
+{
+	display:none!important;
+}
+@media screen and (max-width:768px){
+	.bx-soa-cart-total
+	{
+		!margin-top:20px;
+	}
+	#bx-soa-orderSave a
+	{
+		display:none;
+	}
+}

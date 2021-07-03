@@ -145,6 +145,7 @@ img.logo {
 }
 .header-line-bottom {
 	/*background:#2a78a4;*/
+	margin-bottom: 40px;
 }
 .header-line-bottom .advanced-container {
 	background-color: #fff;
@@ -170,6 +171,20 @@ img.logo {
 }
 .footer-info-phone-link a {
 	text-decoration: underline;
+}
+.slideout-panel {
+	background-color: #fbfbfb;
+}
+.header-main-menu-button:after {
+	content: initial;
+}
+.main-slider .item {
+	border-radius: 10px;
+	height: 100% !important;
+}
+.main-slider .owl-item {
+	/*max-width: 865px;*/
+	min-height: 624px;
 }
 @media screen and (min-width: 62.375em) {
 .fancybox-block .cart-content .header-v3 input.main-slider-banner[type=submit] .main-slider, .header-v3 .fancybox-block .cart-content input.main-slider-banner[type=submit] .main-slider, .header-v3 .main-slider-banner.small .main-slider, .header-v3 .profile-order-container .main-slider-banner.sale-order-list-cancel-payment .main-slider, .header-v3 .profile-order-container .profile-order .sale-order-detail-payment-options-methods-template input.main-slider-banner[type=submit] .main-slider, .header-v3 .profile-order-container .sale-paysystem-wrapper form input.main-slider-banner[type=submit] .main-slider, .profile-order-container .header-v3 .main-slider-banner.sale-order-list-cancel-payment .main-slider, .profile-order-container .profile-order .sale-order-detail-payment-options-methods-template .header-v3 input.main-slider-banner[type=submit] .main-slider, .profile-order-container .sale-paysystem-wrapper form .header-v3 input.main-slider-banner[type=submit] .main-slider {

@@ -1,5 +1,7 @@
 <?use Bitrix\Main\Config\Option;
-$catalogMenuTitle = Option::get('bitlate.proshop', "NL_CATALOG_MENU_TITLE", false, SITE_ID);?>
+//$catalogMenuTitle = Option::get('bitlate.proshop', "NL_CATALOG_MENU_TITLE", false, SITE_ID);
+$catalogMenuTitle = 'Каталог';
+?>
 <div class="header-line-center">
     <div class="advanced-container inline-block-container relative header-mobile-fixed">
         <a href="javascript:;" class="header-mobile-toggle inline-block-item vertical-middle hide-for-xlarge">

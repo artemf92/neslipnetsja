@@ -1,4 +1,4 @@
-<div class="float-right inline-block-container">
+<div class="float-right header-lk__right inline-block-container">
     <?if ($templateOptions['use_compare'] == "Y"):?>
         <div class="inline-block relative">
             <?$TYPE = '';?>

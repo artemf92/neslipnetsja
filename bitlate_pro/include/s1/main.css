@@ -18946,6 +18946,7 @@ div.alert {
 
 .header-line-bottom .advanced-container {
   padding: 0;
+  filter: drop-shadow(0px 6px 16px rgba(158, 158, 158, 0.25));
 }
 
 .header-line-bottom-menu .inline-block {

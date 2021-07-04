@@ -17,10 +17,10 @@ $this->setFrameMode(true);?>
                 $containerClass = 'container row';
                 $parallaxItems = array();
                 if (intval($arItem['PREVIEW_PICTURE']['ID'])) {
-                    $pic = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE']['ID'], array('width' => 1900, 'height' => 574), BX_RESIZE_IMAGE_EXACT, true);
+                    $pic = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE']['ID'], array('width' => 865, 'height' => 624), BX_RESIZE_IMAGE_PROPORTIONAL, true);
                     $picStatic = $pic;
                     if (intval($arItem['DETAIL_PICTURE']['ID'])) {
-                        $tmpPic = CFile::ResizeImageGet($arItem['DETAIL_PICTURE']['ID'], array('width' => 1900, 'height' => 574), BX_RESIZE_IMAGE_EXACT, true);
+                        $tmpPic = CFile::ResizeImageGet($arItem['DETAIL_PICTURE']['ID'], array('width' => 865, 'height' => 624), BX_RESIZE_IMAGE_PROPORTIONAL, true);
                         if ($tmpPic['src']) {
                             $picStatic = $tmpPic;
                         }

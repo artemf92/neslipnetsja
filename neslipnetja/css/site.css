@@ -1,3 +1,41 @@
+@font-face {
+  font-family: 'AppetiteNew';
+  src: url('../fonts/AppetiteNew.woff2') format('woff2'),
+       url('../fonts/AppetiteNew.woff') format('woff'),
+       url('../fonts/AppetiteNew.ttf')  format('truetype');
+}
+.appetite-title {
+	max-width: 1190px;
+	padding: 0 15px;
+	margin: 0 auto 70px;
+	font-family: 'AppetiteNew', 'Montserrat', 'Arial', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 64px;
+	text-align: center;
+	position: relative;
+
+	color: #74C5F3;
+}
+.appetite-title:before,
+.appetite-title:after {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	content: "";
+	width: 13.69vw;
+	height: 1vw;
+	background-image: url('/local/templates/neslipnetja/images/waves-title.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.appetite-title:before {
+	left: 10%;
+}
+.appetite-title:after {
+	right: 10%;
+}
 #bx_compare_count
 {
 	display:none;	
@@ -177,6 +215,9 @@ img.logo {
 }
 .header-main-menu-button:after {
 	content: initial;
+}
+.main-slider {
+	margin-bottom: 90px;
 }
 .main-slider .item {
 	border-radius: 10px;

@@ -20,7 +20,6 @@ $labelBestTitle = Option::get('bitlate.proshop', "NL_LABEL_BEST_TITLE", false, S
 $labelBuyTitle = Option::get('bitlate.proshop', "NL_LABEL_BUY_TITLE", false, SITE_ID);
 $previewTitle = Option::get('bitlate.proshop', "NL_PREVIEW_TITLE", false, SITE_ID);
 ?>
-
 <?if ($arParams["TEMPLATE_THEME"] != 'slider'):?>
     <?if (!$arParams["TAB_TYPE"]):?>
         <?if ($arParams["FILTER_NAME"] != 'searchFilter'):?>
@@ -233,7 +232,7 @@ if (!empty($arResult['ITEMS']))
         <div class="products-flex-item<?=$itemClass?> pos<?=$arResult['BANNER_POSITION']?>" id="<? echo $strMainID; ?>">
     <?endif;
     $arResult['BANNER_POSITION']++;?>
-        <div class="item column text-center hover-elements"<?if ($arParams["TEMPLATE_THEME"] == 'slider'):?> id="<? echo $strMainID; ?>"<?endif;?>>
+        <div class="item column <?//text-center?> hover-elements"<?if ($arParams["TEMPLATE_THEME"] == 'slider'):?> id="<? echo $strMainID; ?>"<?endif;?>>
             <?if (($APPLICATION->GetShowIncludeAreas())):?>
                 <input type="hidden" name="product_position" value="<?=$arItem['ID']?>">
             <?endif;?>
@@ -299,6 +298,7 @@ if (!empty($arResult['ITEMS']))
                             $isPriceExt = false;
                         }
                     }?>
+                    <? $minPrice['PRINT_DISCOUNT_VALUE'] = str_replace('руб.', '₽',$minPrice['PRINT_DISCOUNT_VALUE']);?>
                     <div class="price<?if ($isPriceExt):?> hover-hide<?endif;?>" id="<? echo $arItemIDs['PRICE']; ?>">
                         <?if (!empty($minPrice)):?><?=$minPrice['PRINT_DISCOUNT_VALUE']?><?if ('Y' == $arParams['SHOW_OLD_PRICE'] && $discount > 0):?> <span class="old"><?=CCurrencyLang::CurrencyFormat($maxPriceValue, $arItem['MIN_PRICE']['CURRENCY'])?></span><?endif;?><?endif;?>
                     </div>
@@ -354,7 +354,7 @@ if (!empty($arResult['ITEMS']))
                 <?endif;?>
                 <div class="product-action-label time-buy left"><?=$labelBuyTitle?></div>
             <?endif;?>
-            <div class="hover-show bx_catalog_item_controls">
+			<div class="<?//hover-show?> bx_catalog_item_controls">
                 <div class="hover-buttons">
                     <?if (isset($arItem['OFFERS']) && !empty($arItem['OFFERS'])):?>
                         <?foreach ($arItem['OFFERS'] as $key => $arOffer):
@@ -377,8 +377,8 @@ if (!empty($arResult['ITEMS']))
                     <?else:?>
                         <div class="float-right">
                             <a href="#" class="button transparent add2liked" title="<?=GetMessage('CT_BCS_ADD_2_LIKED')?>" data-ajax="<?=SITE_DIR?>nl_ajax/favorite.php" data-product-id="<?=$arItem['ID']?>">
-                                <svg class="icon">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-liked-hover"></use>
+                                <svg class="favorite-icon" width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.9688 0C23.1238 0 21.4323 0.584336 19.9413 1.73681C18.5119 2.8417 17.5603 4.24898 17 5.2723C16.4397 4.24892 15.4881 2.8417 14.0587 1.73681C12.5677 0.584336 10.8762 0 9.03125 0C3.88264 0 0 4.20909 0 9.79075C0 15.8209 4.84387 19.9466 12.1768 26.1924C13.4221 27.2531 14.8336 28.4553 16.3006 29.7376C16.494 29.9068 16.7423 30 17 30C17.2577 30 17.506 29.9068 17.6994 29.7376C19.1666 28.4552 20.578 27.253 21.8239 26.1917C29.1561 19.9466 34 15.8209 34 9.79075C34 4.20909 30.1174 0 24.9688 0Z"/>
                                 </svg>
                             </a>
                             <?if ($arParams['DISPLAY_COMPARE']):?>
@@ -1053,9 +1053,9 @@ if (isset($arResult['NAV_RESULT']->NavPageCount) && ($arResult['NAV_RESULT']->Na
         <div class="column large-4 small-12 text-center">
             <?if ($nextPageUrl != ''):?>
                 <a href="javascript:;" class="load-more text-center" onclick="getCatalogItems(this, '<?=(($arParams["TAB_TYPE"]) ? '.product-grid-' . $arParams["TAB_TYPE"] . ' .product-grid' : '.products-flex-grid')?>', false<?if ($arParams["TAB_TYPE"]):?>, true<?endif;?>)" data-ajax="<?=$nextPageUrl?>">
-                    <svg class="icon">
+                    <?/*<svg class="icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-load-more"></use>
-                    </svg>
+                    </svg>*/?>
                     <span><?=GetMessage('CT_BCS_TPL_BUTTON_SHOW_MORE')?></span>
                 </a>
             <?endif;?>

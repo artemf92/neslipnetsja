@@ -62,7 +62,7 @@ $isSearch = ($APPLICATION->GetCurDir() == $templateOptions['url_catalog_search']
             );?>
         <?endif;?>
         <footer>
-            <div class="footer-line-top">
+            <?/*<div class="footer-line-top">
                 <div class="advanced-container-medium footer-line-top-container row large-up-2 xlarge-up-3">
                     <div class="column" id="bx_subscribe_small">
                         <?$frame = new \Bitrix\Main\Page\FrameHelper("bx_subscribe_small", false);
@@ -72,7 +72,7 @@ $isSearch = ($APPLICATION->GetCurDir() == $templateOptions['url_catalog_search']
                         <?$frame->end();?>
                     </div>
                 </div>
-            </div>
+            </div>*/?>
             <div class="footer-main">
                 <div class="advanced-container-medium inline-block-container text-center">
                     <div class="footer-info inline-block-item">

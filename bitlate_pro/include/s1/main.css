@@ -15337,16 +15337,16 @@ iframe {
   }
 }
 section {
-  margin-bottom: 1.875rem;
+  padding-bottom: 1.875rem;
 }
 @media screen and (min-width: 32.375em) {
   section {
-    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 }
 @media screen and (min-width: 47.375em) {
   section {
-    margin-bottom: 3.125rem;
+    padding-bottom: 3.125rem;
   }
 }
 @media screen and (min-width: 62.375em) {
@@ -15354,7 +15354,7 @@ section {
     width: 61.3125rem;
   }
   section {
-    margin-bottom: 3.75rem;
+    padding-bottom: 3.75rem;
   }
 }
 @media screen and (min-width: 77.375em) {
@@ -15362,7 +15362,7 @@ section {
     width: 76.3125rem;
   }
   section {
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
   }
 }
 section.fancy,

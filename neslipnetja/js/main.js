@@ -259,18 +259,21 @@ function initOwl() {
                 isLazy = ($self.hasClass('is-lazy')),
                 itemLength = $self.find('.item').length,
                 params = {
-                    items: 4,
+                    items: 2,
                     loop: true,
                     lazyLoad: isLazy,
                     navText: [],
                     responsive: {},
+                    autoWidth: true,
+                    margin: 20,
+                    nav: false,
                 };
             params['responsive'][breakpoints['large']] = {
-                items: 6,
+                items: 4,
             };
             params['responsive'][breakpoints['xlarge']] = {
-                items: 8,
-                dots: false,
+                items: 6,
+                dots: true,
             };
             if (itemLength <= 4) {
                 params['dots'] = false;
@@ -279,10 +282,10 @@ function initOwl() {
                 params['responsive'][breakpoints['large']]['dots'] = false;
                 params['responsive'][breakpoints['large']]['loop'] = false;
             } else if (itemLength <= 8) {
-                params['responsive'][breakpoints['xlarge']]['dots'] = false;
+                params['responsive'][breakpoints['xlarge']]['dots'] = true;
                 params['responsive'][breakpoints['xlarge']]['loop'] = false;
             } else {
-                params['responsive'][breakpoints['xlarge']]['nav'] = true;
+                params['responsive'][breakpoints['xlarge']]['nav'] = false;
             }
             $(this).owlCarousel(params);
         });

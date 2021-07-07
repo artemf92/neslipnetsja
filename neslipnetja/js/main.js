@@ -2,8 +2,8 @@ var productGridOptions = {
     // options
     itemSelector: '.products-flex-item',
     masonry: {
-        columnWidth: 240,
-        gutter: 20
+        columnWidth: 275,
+        gutter: 20,
     },
     // layoutMode: 'cellsByRow',
     // cellsByRow: {
@@ -314,13 +314,14 @@ function initOwl() {
                 itemLength = $self.children('.item').length,
                 params = {
                     items: 1,
-                    margin: -1,
+                    // margin: -1,
                     lazyLoad: isLazy,
                     dragEndSpeed: 100,
                     navText: [],
+                    nav: false,
                     rewind: !variation,
                     responsive: {},
-                    mouseDrag: false
+                    mouseDrag: true
                 };
 
             params['responsive'][breakpoints['medium']] = {
@@ -331,12 +332,13 @@ function initOwl() {
             };
             params['responsive'][breakpoints['xlarge']] = {
                 items: inner ? 3 : 4,
-                nav: true,
-                dots: false,
+                nav: false,
+                dots: true,
             };
             params['responsive'][breakpoints['xxlarge']] = {
-                items: inner ? 4 : 5,
-                nav: true,
+                // items: inner ? 4 : 5,
+                items: 4,
+                nav: false,
                 dots: false,
             };
             if (!variation) {

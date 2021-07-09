@@ -1,0 +1,9 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("SOAP");
+?>
+<?$APPLICATION->IncludeComponent(
+	"webservice.api",
+	"",
+Array()
+);?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
